@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STEMSupply Navigation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="iconlogo.PNG" type="image/PNG">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-left">
+      <i class="fas fa-phone"></i> 00971-XXXXXXXXX
+    </div>
+    <div class="top-center">
+      <img src="logostem.jpg" alt="STEMSupply Logo" class="logo" />
+    </div>
+    <div class="top-right" id="userStatus">
+      <a href="signin.html">Sign In</a> or <a href="create-account.html">Create an Account</a>
+    </div>
+  </div>
+  
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+      <ul class="nav-left">
+        <li class="nav-item">
+          <li class="nav-item" data-name="Science">
+          <a href="science.html">Science</a>
+          <ul class="dropdown-menu">
+            <li><a href="earth-space.html">Earth and Space Science</a></li>
+            <li><a href="electricity.html">Electricity and Circuits</a></li>
+            <li><a href="labequipment.html">Lab Equipment and Supplies</a></li>
+            <li><a href="lifescience.html">Life Science</a></li>
+            <li><a href="physicalscience.html">Physical Science</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Technology">
+          <a href="technology.html">Technology</a>
+          <ul class="dropdown-menu">
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="coding.html">Coding</a></li>
+            <li><a href="drones.html">Drones</a></li>
+            <li><a href="media-production.html">Media Production and Virtual Reality</a></li>
+            <li><a href="robotics.html">Robotics</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Engineering">
+              <a href="engineering.html">Engineering</a>
+          <ul class="dropdown-menu">
+            <li><a href="buildingsupplies.html">Building Supplies</a></li>
+            <li><a href="hydraulics.html">Hydraulics</a></li>
+            <li><a href="renewable-eergy.html">Renewable Energy</a></li>
+            <li><a href="structures.html">Structures</a></li>
+            
+          </ul>
+      </li>
+          <li class="nav-item" data-name="Mathematics">
+              <a href="mathematics.html">Mathematics</a>
+          <ul class="dropdown-menu">
+            <li><a href="geometry.html">Geometry</a></li>
+            <li><a href="mathgames.html">Math Games</a></li>
+            <li><a href="measurements.html">Measurements</a></li>
+            <li><a href="operations.html">Operations</a></li>
+            <li><a href="timeandmoney.html">Time And Money</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Makerspace">
+          <a href="makerspace.html">Makerspace</a>
+          <ul class="dropdown-menu">
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="buildingsupplies.html">Building Supplies</a></li>
+            <li><a href="desks.html">Desks and Tables</a></li>
+            <li><a href="technologystorage.html">Technology and Device Storage</a></li>
+            <li><a href="artsupplies.html">Art and Project Supplies</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Afterschool">
+          <a href="afterschool.html">Afterschool</a>
+          <ul class="dropdown-menu">
+            <li><a href="boardgames.html">Board Games</a></li>
+            <li><a href="puzzles.html">Puzzles</a></li>
+            <li><a href="kinesthetic.html">Kinesthetic Games</a></li>
+            <li><a href="mathgames.html">Math Games</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Collaborative Workspace">
+              <a href="collaborative.html">Collaborative Workspace</a>
+          <ul class="dropdown-menu">
+            <li><a href="books.html">Books</a></li>
+            <li><a href="posters.html">Posters and Banners</a></li>
+            <li><a href="seating.html">Flexible Seating</a></li>
+            <li><a href="desks.html">Desks and Tables</a></li>
+            <li><a href="whiteboards.html">Whiteboards</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Outdoor Classroom">
+          <a href="onlineservices.html">Online Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="courses-computerscience.html">Computer Science and Programming</a></li>
+            <li><a href="courses-engineering.html">Engineering and Robotics</a></li>
+            <li><a href="courses-math.html">Math and Logic</a></li>
+            <li><a href="courses-science.html">Science And Innovation</a></li>
+            <li><a href="courses-data.html">Data and Analytics</a></li>
+            <li><a href="courses-design.html">Design and Simulation Tools</a></li>
+            <li><a href="courses-aerospace.html">Aerospace and Mechanical Engineering</a></li>
+            <li><a href="courses-others.html">Other Courses</a></li>          </ul>
+        </li>
+          <li class="nav-item" data-name="About Us">
+          <a href="about.html">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="ourstory.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    <div class="nav-right">
+      <input type="text" id="searchInput" placeholder="Search entire store here..." class="search-input"/>
+      <i class="fas fa-search search-icon" onclick="performSearch()"></i>
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+      </a>    </div>
+  </nav>
+  <!-- About STEMSupply Section -->
+<section class="about-section">
+    <div class="about-container">
+      <h1>About STEMSupply</h1>
+      <p>
+        STEMSupply is a supply chain management system designed specifically for STEM fields, offering both products 
+        (e.g., lab equipment, electronic components, software licenses) and services (e.g., device calibration, lab maintenance, 
+        prototyping services). The goal of the system is to streamline the procurement process, ensuring timely delivery, transparency 
+        in supply chains, and optimized inventory management.
+      </p>
+    </div>
+  </section>
+  <!-- Category Cards Section -->
+<section class="category-grid">
+    <div class="category-card">
+      <h3>Science</h3>
+      <img src="scienceimage.png" alt="Science">
+      <a href="science.html">Explore Science</a>
+    </div>
+  
+    <div class="category-card">
+      <h3>Technology</h3>
+      <img src="technologyimage.png" alt="Technology">
+      <a href="technology.html">Explore Technology</a>
+    </div>
+  
+    <div class="category-card">
+      <h3>Engineering</h3>
+      <img src="engineeringphoto.png" alt="Engineering">
+      <a href="engineering.html">Explore Engineering</a>
+    </div>
+  
+    <div class="category-card">
+      <h3>Mathematics</h3>
+      <img src="mathimage.png" alt="Mathematics">
+      <a href="mathematics.html">Explore Mathematics</a>
+    </div>
+  
+    <div class="category-card">
+      <h3>Makerspace</h3>
+      <img src="makerspaceimage.png" alt="Makerspace">
+      <a href="makerspace.html">Explore Makerspace</a>
+    </div>
+  
+    <div class="category-card">
+      <h3>Afterschool</h3>
+      <img src="afterschool.PNG" alt="Afterschool">
+      <a href="afterschool.html">Explore Afterschool</a>
+    </div>
+
+    <div class="category-card">
+        <h3>Collaborative Workspace</h3>
+        <img src="collaborativeimage.png" alt="Collaborative Workspace">
+        <a href="collaborative.html">Explore Collaborative Workspace</a>
+    </div>
+
+    <div class="category-card">
+        <h3>Outdoor Classroom</h3>
+        <img src="outdoorclass.png" alt="Outdoor Classroom">
+        <a href="outdoor.html">Explore Outdoor Classroom</a>
+    </div>
+</section>  
+  <!-- Sticky Footer -->
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="back-to-top">
+    </div>
+  
+    <div class="footer-content">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Get to Know Us</h4>
+          <ul>
+            <li><a href="#">About STEMSupply</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Work With Us</h4>
+          <ul>
+            <li><a href="#">Become a Partner</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Promote STEM</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <img src="logostem.jpg" alt="STEMSupply Logo" class="footer-logo" />
+      <div class="footer-meta">
+        <select>
+          <option>English</option>
+        </select>
+        <select>
+          <option>USD - U.S. Dollar</option>
+          <option>AED - AED Dirhams</option>
+        </select>
+        <select>
+          <option>United Arab Emirates</option>
+        </select>
+      </div>
+      <p>© 2025 STEMSupply. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

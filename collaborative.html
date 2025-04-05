@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collaborative Worksapce - STEMSupply</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="iconlogo.PNG" type="image/PNG">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-left">
+      <i class="fas fa-phone"></i> 00971-XXXXXXXXX
+    </div>
+    <div class="top-center">
+      <img src="logostem.jpg" alt="STEMSupply Logo" class="logo" />
+    </div>
+    <div class="top-right" id="userStatus">
+      <a href="signin.html">Sign In</a> or <a href="create-account.html">Create an Account</a>
+    </div>
+  </div>
+  
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+      <ul class="nav-left">
+        <li class="nav-item">
+          <li class="nav-item" data-name="Science">
+          <a href="science.html">Science</a>
+          <ul class="dropdown-menu">
+            <li><a href="earth-space.html">Earth and Space Science</a></li>
+            <li><a href="electricity.html">Electricity and Circuits</a></li>
+            <li><a href="labequipment.html">Lab Equipment and Supplies</a></li>
+            <li><a href="lifescience.html">Life Science</a></li>
+            <li><a href="physicalscience.html">Physical Science</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Technology">
+          <a href="technology.html">Technology</a>
+          <ul class="dropdown-menu">
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="coding.html">Coding</a></li>
+            <li><a href="drones.html">Drones</a></li>
+            <li><a href="media-production.html">Media Production and Virtual Reality</a></li>
+            <li><a href="robotics.html">Robotics</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Engineering">
+              <a href="engineering.html">Engineering</a>
+          <ul class="dropdown-menu">
+            <li><a href="buildingsupplies.html">Building Supplies</a></li>
+            <li><a href="hydraulics.html">Hydraulics</a></li>
+            <li><a href="renewable-eergy.html">Renewable Energy</a></li>
+            <li><a href="structures.html">Structures</a></li>
+            
+          </ul>
+      </li>
+          <li class="nav-item" data-name="Mathematics">
+              <a href="mathematics.html">Mathematics</a>
+          <ul class="dropdown-menu">
+            <li><a href="geometry.html">Geometry</a></li>
+            <li><a href="mathgames.html">Math Games</a></li>
+            <li><a href="measurements.html">Measurements</a></li>
+            <li><a href="operations.html">Operations</a></li>
+            <li><a href="timeandmoney.html">Time And Money</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Makerspace">
+          <a href="makerspace.html">Makerspace</a>
+          <ul class="dropdown-menu">
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="buildingsupplies.html">Building Supplies</a></li>
+            <li><a href="desks.html">Desks and Tables</a></li>
+            <li><a href="technologystorage.html">Technology and Device Storage</a></li>
+            <li><a href="artsupplies.html">Art and Project Supplies</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Afterschool">
+          <a href="afterschool.html">Afterschool</a>
+          <ul class="dropdown-menu">
+            <li><a href="boardgames.html">Board Games</a></li>
+            <li><a href="puzzles.html">Puzzles</a></li>
+            <li><a href="kinesthetic.html">Kinesthetic Games</a></li>
+            <li><a href="mathgames.html">Math Games</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Collaborative Workspace">
+              <a href="collaborative.html">Collaborative Workspace</a>
+          <ul class="dropdown-menu">
+            <li><a href="books.html">Books</a></li>
+            <li><a href="posters.html">Posters and Banners</a></li>
+            <li><a href="seating.html">Flexible Seating</a></li>
+            <li><a href="desks.html">Desks and Tables</a></li>
+            <li><a href="whiteboards.html">Whiteboards</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Outdoor Classroom">
+          <a href="onlineservices.html">Online Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="courses-computerscience.html">Computer Science and Programming</a></li>
+            <li><a href="courses-engineering.html">Engineering and Robotics</a></li>
+            <li><a href="courses-math.html">Math and Logic</a></li>
+            <li><a href="courses-science.html">Science And Innovation</a></li>
+            <li><a href="courses-data.html">Data and Analytics</a></li>
+            <li><a href="courses-design.html">Design and Simulation Tools</a></li>
+            <li><a href="courses-aerospace.html">Aerospace and Mechanical Engineering</a></li>
+            <li><a href="courses-others.html">Other Courses</a></li>          </ul>
+        </li>
+          <li class="nav-item" data-name="About Us">
+          <a href="about.html">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="ourstory.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    <div class="nav-right">
+      <input type="text" id="searchInput" placeholder="Search entire store here..." class="search-input"/>
+      <i class="fas fa-search search-icon" onclick="performSearch()"></i>
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+      </a>    </div>
+  </nav>
+<section class="about-section">
+    <div class="about-container">
+      <h1>Collaborative Work</h1>
+      <p>
+        A collaborative workspace fosters innovation through teamwork and shared ideas. At STEMSupply, we provide the tools 
+        and resources necessary to create environments where collaboration thrives. From flexible furniture to advanced 
+        technology, our supply chain solutions ensure that educational institutions, businesses, and creative spaces have 
+        everything needed to work together effectively and efficiently.
+      </p>
+    </div>
+  </section>
+  
+  <section class="category-showcase">
+    <div class="category-header">
+      <h2>Shop by Category</h2>
+    </div>
+  
+    <div class="category-circles">
+      <div class="circle-item">
+        <a href="books.html" class="circle-item">
+            <img src="books.PNG" alt="Books">
+            <p>Books</p>
+          </a>
+      </div>
+      <div class="circle-item">
+        <a href="posters.html" class="circle-item">
+            <img src="posters.PNG" alt="Posters and Banners">
+            <p>Posters and Banners</p>
+          </a>
+      </div>
+      <div class="circle-item">
+        <a href="seating.html" class="circle-item">
+            <img src="seating.PNG" alt="Flexible Seating">
+            <p>Flexible Seating</p>
+          </a>
+      </div>
+      <div class="circle-item">
+        <a href="desks.html" class="circle-item">
+            <img src="desks.PNG" alt="Desks and Tables">
+            <p>Desks and Tables</p>
+          </a>          
+        </div>
+        <div class="circle-item">
+            <a href="whiteboards.html" class="circle-item">
+                <img src="whiteboards.PNG" alt="Whiteboards">
+                <p>Whiteboards</p>
+              </a>          
+            </div>
+      
+    </div>
+  </section>
+  
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="lawsoftrust.jpg" alt=" The 10 Laws of Trust" />
+    <h4> The 10 Laws of Trust </h4>
+    <p class="price">$20.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+   In The 10 Laws of Trust, JetBlue chairman Joel Peterson explores how a culture of trust gives companies an edge. How does it feel to work for a firm where leaders and colleagues trust one another.
+   </p>
+    <button onclick="addToCart(' The 10 Laws of Trust', 20.00 , 'lawsoftrust.jpg', '88-567', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src=" The Power of Experiments.jpg" alt="The Power of Experiments" />
+    <h4> The Power of Experiments </h4>
+    <p class="price">$30.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+   Luca and Bazerman describe the central role experiments play in the tech sector, drawing lessons and best practices from the experiences of such companies as StubHub, Alibaba, and Uber. Successful experiments can save companies money.
+   </p>
+    <button onclick="addToCart(' The Power of Experiments', 30.00 , 'The Power of Experiments.jpg', '88-567', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Revolutionize Teamwork.jpg" alt="Revolutionize Teamwork" />
+    <h4> Revolutionize Teamwork </h4>
+    <p class="price">$35.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+   "Taking a page from Facebook, Eric Coryell has developed a teamwork model that creates trust, success, and true accountability. How? By redefining your team’s model to be customer facing as opposed to reporting up! 
+   </p>
+    <button onclick="addToCart('Revolutionize Teamwork', 35.00 , 'Revolutionize Teamwork.jpg', '77-465', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Loonshots.jpg" alt="Loonshots" />
+    <h4> Loonshots </h4>
+    <p class="price">$38.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+   In Loonshots, physicist and entrepreneur Safi Bahcall reveals a surprising new way of thinking about the mysteries of group behavior that challenges everything we thought we knew about nurturing radical breakthroughs.
+   </p>
+    <button onclick="addToCart('Loonshots', 38.00 , 'Loonshots.jpg', '77-548', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+     
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Fast Times.jpg" alt="Fast Times" />
+    <h4> Fast Times </h4>
+    <p class="price">$30.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+   For executives frustrated with their pace of change, Fast Times digs into the root questions that shine a light on the issues that keep companies like yours from setting direction, learning, and adapting: Do you really know how your company is performing?
+   </p>
+    <button onclick="addToCart('Fast Times', 30.00 , 'Fast Times.jpg', '77-552', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Together We Thrive.jpg" alt="Together We Thrive" />
+    <h4> Together We Thrive </h4>
+    <p class="price">$30.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Poster/Banner
+    </p>
+   <button onclick="addToCart('Together We Thrive', 30.00 , 'Together We Thrive.jpg', '77-552', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Turning Ideas into Impact.jpg" alt="Turning Ideas into Impact" />
+    <h4> Turning Ideas into Impact </h4>
+    <p class="price">$20.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Poster/Banner
+    </p>
+    <button onclick="addToCart('Turning Ideas into Impact', 20.00 , 'Turning Ideas into Impact.jpg', '77-543', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="justbeyou.jpg" alt="Just Be you " />
+    <h4> Just Be you  </h4>
+    <p class="price">$10.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Poster/Banner
+    </p>
+    <button onclick="addToCart('Just Be you', 10.00 , 'justbeyou.jpg', '77-552', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Teamwork.jpg" alt="Teamwork " />
+    <h4> Teamwork  </h4>
+    <p class="price">$10.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Poster/Banner
+    </p>
+    <button onclick="addToCart('Teamwork', 10.00 , 'Teamwork.jpg', '77-543', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>  
+
+
+  <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Flex Space Premium Wobble Chairs.jpg" alt="Flex Space Premium Wobble Chairs " />
+    <h4> Flex Space Premium Wobble Chairs  </h4>
+    <p class="price">$100.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Our wobble chairs are an alternative to traditional seating—giving kids a full range of movement and the stability they need to wobble without tipping over! Each of our chairs features a comfortable, contoured seat and a rounded, no-slip rubber base…plus, the durable plastic chairs’ unique design helps strengthen core muscles while encouraging proper posture.
+    </p>
+    <button onclick="addToCart('Flex Space Premium Wobble Chairs', 100.00 , 'Flex Space Premium Wobble Chairs.jpg', '77-443’, '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Flex Space Teardrop Beanbag Seats.jpg" alt="Flex Space Teardrop Beanbag Seats " />
+    <h4> Flex Space Teardrop Beanbag Seats  </h4>
+    <p class="price">$150.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+   Perfect for reading areas, classroom activities and more, our beanbags provide cozy, flexible seating students love! The seats feature extra-high backs and mold to the body’s contour for the ultimate comfort and support…plus, each seat has a wipe-clean vinyl cover that includes a stitch-closed zipper to keep the polystyrene beads inside.
+    </p>
+    <button onclick="addToCart('Flex Space Teardrop Beanbag Seats', 150.00 , 'Flex Space Teardrop Beanbag Seats.jpg', '77-332', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Flex Space Premium Floor Seats.jpg" alt="Flex Space Premium Floor Seats " />
+    <h4> Flex Space Premium Floor Seats </h4>
+    <p class="price">$80.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+     Everything teachers and students love about our Flex-Space Comfy Floor Seats…but featuring a vinyl surface that’s super-easy to wipe clean! Perfect for independent or group activities, our cozy, cushioned chairs give kids flexible seating wherever they need it—and make cleanup a breeze for teachers!
+    </p>
+    <button onclick="addToCart('Flex Space Premium Floor Seats', 80.00 , 'Flex Space Premium Floor Seats.jpg', '77-664', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Flex Space Ergo Bounce Cantilever Chairs.jpg" alt="Flex Space Ergo Bounce Cantilever Chairs " />
+    <h4> Flex Space Ergo Bounce Cantilever Chairs </h4>
+    <p class="price">$90.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+    Our specially designed ergonomic chairs give kids the comfort they need as they sit the way that suits them! With a flexible seat back and a unique steel frame that provides both spring and stability, each molded chair allows children to sit forward and sideways…and even bounce.
+    </p>
+    <button onclick="addToCart('Flex Space Ergo Bounce Cantilever Chairs', 90.00 , 'Flex Space Ergo Bounce Cantilever Chairs.jpg', '77-544', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="Flex Space Premium Floor Cushion.jpg" alt="Flex Space Premium Floor Cushion " />
+    <h4> Flex Space Premium Floor Cushion </h4>
+    <p class="price">$50.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+    Our inviting cushion provides comfortable floor seating wherever you need it! The ultra-durable cushion features rounded corners, a thick foam interior and an expertly stitched vinyl cover that wipes clean to keep it looking like new.
+    </p>
+    <button onclick="addToCart('Flex Space Premium Floor Cushion', 50.00 , 'Flex Space Premium Floor Cushion.jpg', '77-666', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="48SingleSidedWB.jpg" alt="48SingleSidedWB " />
+    <h4> 48SingleSidedWB  </h4>
+    <p class="price">$100.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Bring people together. Collaborative Spaces™ fosters teamwork through adaptable environments that can transform at a moment's notice or evolve over time. Optimize existing spaces with individual pieces or create new ones with the full range of mobile team carts, work tables and accessories. Scale up, scale down, create a space for the way you work.
+      Dimensions: W48 x D18 x H72 IN.
+    </p>
+    <button onclick="addToCart('48SingleSidedWB', 100.00 , '48SingleSidedWB.jpg', '77-555', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="60SingleSidedWB.jpg" alt="60SingleSidedWB " />
+    <h4> 60SingleSidedWB  </h4>
+    <p class="price">$150.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Bring people together. Collaborative Spaces™ fosters teamwork through adaptable environments that can transform at a moment's notice or evolve over time. Optimize existing spaces with individual pieces or create new ones with the full range of mobile team carts, work tables and accessories. Scale up, scale down, create a space for the way you work.
+      Dimensions: W60 x D18 x H72 IN.
+    </p>
+    <button onclick="addToCart('60SingleSidedWB', 150.00 , '60SingleSidedWB.jpg', '77-505', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="48DoubleSidedWB.jpg" alt="48DoubleSidedWB " />
+    <h4> 48DoubleSidedWB  </h4>
+    <p class="price">$200.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Bring people together. Collaborative Spaces™ fosters teamwork through adaptable environments that can transform at a moment's notice or evolve over time. Optimize existing spaces with individual pieces or create new ones with the full range of mobile team carts, work tables and accessories. Scale up, scale down, create a space for the way you work.
+      Dimensions: W48 x D18 x H72 IN.
+    </p>
+    <button onclick="addToCart('48DoubleSidedWB', 200.00 , '48DoubleSidedWB.jpg', '77-075', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+   
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+    <!-- Front side -->
+    <div class="flip-front">
+    <img src="60DoubleSidedWB.jpg" alt="60DoubleSidedWB " />
+    <h4> 60DoubleSidedWB  </h4>
+    <p class="price">$250.00 </p>
+    </div>
+    <!-- Back side -->
+    <div class="flip-back">
+    <p>
+      Bring people together. Collaborative Spaces™ fosters teamwork through adaptable environments that can transform at a moment's notice or evolve over time. Optimize existing spaces with individual pieces or create new ones with the full range of mobile team carts, work tables and accessories. Scale up, scale down, create a space for the way you work.
+      Dimensions: W60 x D18 x H72 IN.
+    </p>
+    <button onclick="addToCart('60DoubleSidedWB', 250.00 , '60DoubleSidedWB.jpg', '77-995', '')">
+    <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+    </button>
+    </div>
+    </div>
+   </div>
+
+   <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <!-- Front side -->
+      <div class="flip-front">
+        <img src="19-table.jpg" alt="Compass Makerspace Table" />
+        <h4>Compass Makerspace Table</h4>
+        <p class="price">$69.99</p>
+      </div>
+  
+      <!-- Back side -->
+      <div class="flip-back">
+        <p>
+          Designed to foster active thinking and creating, available in various heights for sitting or standing activities.
+        </p>
+        <button onclick="addToCart('Compass Makerspace Table', 69.99, '19-table.jpg', '19-001', '')">
+          <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <!-- Front side -->
+      <div class="flip-front">
+        <img src="19-cefed.jpg" alt="CEF ED Table Series" />
+        <h4>CEF ED Table Series</h4>
+        <p class="price">$136.00</p>
+      </div>
+  
+      <!-- Back side -->
+      <div class="flip-back">
+        <p>
+          Designed to foster active thinking and creating, available in various heights for sitting or standing activities.
+        </p>
+        <button onclick="addToCart('CEF ED Table Series', 136.00, '19-cefed.jpg', '19-002', '')">
+          <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <!-- Front side -->
+      <div class="flip-front">
+        <img src="19-smith.jpg" alt="Smith System Planner Studio Tables" />
+        <h4>Smith System Planner Studio Tables</h4>
+        <p class="price">$95.00</p>
+      </div>
+  
+      <!-- Back side -->
+      <div class="flip-back">
+        <p>
+          Planner Studio Tables by Smith System are designed for today's creative learning spaces, offering flexibility and durability for various makerspace activities.
+        </p>
+        <button onclick="addToCart('Smith System Planner Studio Tables', 95.00, '19-smith.jpg', '19-003', '')">
+          <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <!-- Front side -->
+      <div class="flip-front">
+        <img src="19-paragonmaker.jpg" alt="Paragon MAKER INVENT Table" />
+        <h4>Paragon MAKER INVENT Table</h4>
+        <p class="price">$270.00</p>
+      </div>
+  
+      <!-- Back side -->
+      <div class="flip-back">
+        <p>
+          The MAKER INVENT Table by Paragon is designed for makerspaces and innovation labs, providing a sturdy and versatile workspace for collaborative projects.
+        </p>
+        <button onclick="addToCart('Paragon MAKER INVENT Table', 270.00, '19-paragonmaker.jpg', '19-004', '')">
+          <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="product-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <!-- Front side -->
+      <div class="flip-front">
+        <img src="19-academytable.jpg" alt="Academy Furniture Makerspace Mobile Table" />
+        <h4>Academy Furniture Makerspace Mobile Table</h4>
+        <p class="price">$50.55</p>
+      </div>
+  
+      <!-- Back side -->
+      <div class="flip-back">
+        <p>
+          A mobile table designed for makerspaces, offering flexibility and mobility to adapt to various collaborative projects and learning environments.
+        </p>
+        <button onclick="addToCart('Academy Furniture Makerspace Mobile Table', 50.55, '19-academytable.jpg', '19-005', '')">
+          <i class="fas fa-shopping-cart cart-icon"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+   
+  
+</section>
+</div>
+  
+  <footer class="site-footer">
+    <div class="back-to-top">
+    </div>
+  
+    <div class="footer-content">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Get to Know Us</h4>
+          <ul>
+            <li><a href="#">About STEMSupply</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Work With Us</h4>
+          <ul>
+            <li><a href="#">Become a Partner</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Promote STEM</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <img src="logostem.jpg" alt="STEMSupply Logo" class="footer-logo" />
+      <div class="footer-meta">
+        <select>
+          <option>English</option>
+        </select>
+        <select>
+          <option>USD - U.S. Dollar</option>
+          <option>AED - AED Dirhams</option>
+        </select>
+        <select>
+          <option>United States</option>
+        </select>
+      </div>
+      <p>© 2025 STEMSupply. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
+

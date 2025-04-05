@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Courses - STEMSupply</title>
+  <link rel="stylesheet" href="courses-style.css" />  
+  <link rel="icon" href="iconlogo.PNG" type="image/PNG">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-left">
+      <i class="fas fa-phone"></i> 00971-XXXXXXXXX
+    </div>
+    <div class="top-center">
+      <img src="logostem.jpg" alt="STEMSupply Logo" class="logo" />
+    </div>
+    <div class="top-right" id="userStatus">
+      <a href="signin.html">Sign In</a> or <a href="create-account.html">Create an Account</a>
+    </div>
+  </div>
+  
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+      <ul class="nav-left">
+        <li class="nav-item">
+          <li class="nav-item" data-name="Science">
+          <a href="science.html">Science</a>
+          <ul class="dropdown-menu">
+            <li><a href="earth-space.html">Earth and Space Science</a></li>
+            <li><a href="electricity.html">Electricity and Circuits</a></li>
+            <li><a href="labequipment.html">Lab Equipment and Supplies</a></li>
+            <li><a href="lifescience.html">Life Science</a></li>
+            <li><a href="physicalscience.html">Physical Science</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Technology">
+          <a href="technology.html">Technology</a>
+          <ul class="dropdown-menu">
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="coding.html">Coding</a></li>
+            <li><a href="drones.html">Drones</a></li>
+            <li><a href="media-production.html">Media Production and Virtual Reality</a></li>
+            <li><a href="robotics.html">Robotics</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Engineering">
+              <a href="engineering.html">Engineering</a>
+          <ul class="dropdown-menu">
+            <li><a href="buildingsupplies.html">Building Supplies</a></li>
+            <li><a href="hydraulics.html">Hydraulics</a></li>
+            <li><a href="renewable-eergy.html">Renewable Energy</a></li>
+            <li><a href="structures.html">Structures</a></li>
+            
+          </ul>
+      </li>
+          <li class="nav-item" data-name="Mathematics">
+              <a href="mathematics.html">Mathematics</a>
+          <ul class="dropdown-menu">
+            <li><a href="geometry.html">Geometry</a></li>
+            <li><a href="mathgames.html">Math Games</a></li>
+            <li><a href="measurements.html">Measurements</a></li>
+            <li><a href="operations.html">Operations</a></li>
+            <li><a href="timeandmoney.html">Time And Money</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Makerspace">
+          <a href="makerspace.html">Makerspace</a>
+          <ul class="dropdown-menu">
+            <li><a href="3dprinting.html">3D Printing</a></li>
+            <li><a href="buildingsupplies.html">Building Supplies</a></li>
+            <li><a href="desks.html">Desks and Tables</a></li>
+            <li><a href="technologystorage.html">Technology and Device Storage</a></li>
+            <li><a href="artsupplies.html">Art and Project Supplies</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Afterschool">
+          <a href="afterschool.html">Afterschool</a>
+          <ul class="dropdown-menu">
+            <li><a href="boardgames.html">Board Games</a></li>
+            <li><a href="puzzles.html">Puzzles</a></li>
+            <li><a href="kinesthetic.html">Kinesthetic Games</a></li>
+            <li><a href="mathgames.html">Math Games</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Collaborative Workspace">
+              <a href="collaborative.html">Collaborative Workspace</a>
+          <ul class="dropdown-menu">
+            <li><a href="books.html">Books</a></li>
+            <li><a href="posters.html">Posters and Banners</a></li>
+            <li><a href="seating.html">Flexible Seating</a></li>
+            <li><a href="desks.html">Desks and Tables</a></li>
+            <li><a href="whiteboards.html">Whiteboards</a></li>
+          </ul>
+        </li>
+          <li class="nav-item" data-name="Outdoor Classroom">
+          <a href="onlineservices.html">Online Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="courses-computerscience.html">Computer Science and Programming</a></li>
+            <li><a href="courses-engineering.html">Engineering and Robotics</a></li>
+            <li><a href="courses-math.html">Math and Logic</a></li>
+            <li><a href="courses-science.html">Science And Innovation</a></li>
+            <li><a href="courses-data.html">Data and Analytics</a></li>
+            <li><a href="courses-design.html">Design and Simulation Tools</a></li>
+            <li><a href="courses-aerospace.html">Aerospace and Mechanical Engineering</a></li>
+            <li><a href="courses-others.html">Other Courses</a></li>          </ul>
+        </li>
+          <li class="nav-item" data-name="About Us">
+          <a href="about.html">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="ourstory.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    <div class="nav-right">
+      <input type="text" id="searchInput" placeholder="Search entire store here..." class="search-input"/>
+      <i class="fas fa-search search-icon" onclick="performSearch()"></i>
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+      </a>    </div>
+  </nav>
+
+  <section class="about-section">
+    <div class="about-container">
+      <h1>Math and Logic</h1>
+      <p>
+        Math and Logic form the backbone of problem-solving and critical thinking across a wide range of fields. Mathematical concepts 
+        such as calculus, algebra, and discrete mathematics enable professionals to model, analyze, and predict behaviors in the real world. 
+        Logic, on the other hand, is the study of reasoning and formal systems, crucial in fields like computer science, philosophy, and 
+        artificial intelligence. These disciplines foster analytical thinking and support the development of algorithms and decision-making
+         processes.
+      </p>
+    </div>
+  </section>
+  
+
+  <div class="course-container">
+    <!-- Course 1 -->
+    <div class="course-card">
+        <img src="mathematicallogic.PNG" alt="Mathematical Logic: Foundations and Applications">
+        <div class="course-content">
+            <h2>Mathematical Logic: Foundations and Applications</h2>
+            <p><br>Covers the foundations of mathematical logic, including propositional logic, first-order logic, and the application of logic in computer science.</p>
+            <span class="instructor">Dr. Thomas West</span>
+            <div class="rating">⭐ 4.7 (8,345)</div>
+            <div class="details">20 total hours • 120 lectures • All Levels</div>
+            <div class="price">
+                <span class="current">$49.99</span>
+                <span class="original">$79.99</span>
+            </div>
+            <button onclick="handleButtonClick('Mathematical Logic: Foundations and Applications', 49.99, 'mathematicallogic.PNG', '00-000')" class="buy-btn">
+                <i class="fas fa-shopping-cart cart-icon"></i> BUY NOW
+            </button>
+        </div>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-card">
+        <img src="calculus.PNG" alt="Calculus: Single Variable">
+        <div class="course-content">
+            <h2>Calculus: Single Variable</h2>
+            <p><br>A comprehensive introduction to single-variable calculus, including limits, derivatives, integrals, and the fundamental theorem of calculus.</p>
+            <span class="instructor">Prof. Julia Mitchell</span>
+            <div class="rating">⭐ 4.6 (12,225)</div>
+            <div class="details">30 total hours • 150 lectures • All Levels</div>
+            <div class="price">
+                <span class="current">$59.99</span>
+                <span class="original">$89.99</span>
+            </div>
+            <button onclick="handleButtonClick('Calculus: Single Variable', 59.99, 'calculus.PNG', '00-000')" class="buy-btn">
+                <i class="fas fa-shopping-cart cart-icon"></i> BUY NOW
+            </button>
+        </div>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="course-card">
+        <img src="discretemath.PNG" alt="Discrete Mathematics">
+        <div class="course-content">
+            <h2>Discrete Mathematics</h2>
+            <p><br>Focuses on mathematical reasoning, set theory, logic, combinatorics, and graph theory. Key for computer science students.</p>
+            <span class="instructor">Dr. Robert Gray</span>
+            <div class="rating">⭐ 4.8 (9,765)</div>
+            <div class="details">35 total hours • 180 lectures • All Levels</div>
+            <div class="price">
+                <span class="current">$69.99</span>
+                <span class="original">$99.99</span>
+            </div>
+            <button onclick="handleButtonClick('Discrete Mathematics', 69.99, 'discretemath.PNG', '00-000')" class="buy-btn">
+                <i class="fas fa-shopping-cart cart-icon"></i> BUY NOW
+            </button>
+        </div>
+    </div>
+
+    <!-- Course 4 -->
+    <div class="course-card">
+        <img src="linearalgebra.PNG" alt="Linear Algebra and Its Applications">
+        <div class="course-content">
+            <h2>Linear Algebra and Its Applications</h2>
+            <p><br>Teaches linear algebra concepts such as vector spaces, matrices, eigenvalues, and eigenvectors, with practical applications in data science.</p>
+            <span class="instructor">Prof. Benjamin Hill</span>
+            <div class="rating">⭐ 4.5 (7,890)</div>
+            <div class="details">40 total hours • 200 lectures • Intermediate</div>
+            <div class="price">
+                <span class="current">$79.99</span>
+                <span class="original">$109.99</span>
+            </div>
+            <button onclick="handleButtonClick('Linear Algebra and Its Applications', 79.99, 'linearalgebra.PNG', '00-000')" class="buy-btn">
+                <i class="fas fa-shopping-cart cart-icon"></i> BUY NOW
+            </button>
+        </div>
+    </div>
+
+    <!-- Course 5 -->
+    <div class="course-card">
+        <img src="numbertheory.PNG" alt="Number Theory">
+        <div class="course-content">
+            <h2>Number Theory</h2>
+            <p><br>Introduces prime numbers, divisibility, modular arithmetic, Diophantine equations, and more in the fascinating area of number theory.</p>
+            <span class="instructor">Dr. Sarah Williams</span>
+            <div class="rating">⭐ 4.7 (5,678)</div>
+            <div class="details">25 total hours • 120 lectures • All Levels</div>
+            <div class="price">
+                <span class="current">$64.99</span>
+                <span class="original">$99.99</span>
+            </div>
+            <button onclick="handleButtonClick('Number Theory', 64.99, 'numbertheory.PNG', '00-000')" class="buy-btn">
+                <i class="fas fa-shopping-cart cart-icon"></i> BUY NOW
+            </button>
+        </div>
+    </div>
+
+    <!-- Course 6 -->
+    <div class="course-card">
+        <img src="mathlogicforcs.PNG" alt="Mathematical Logic for Computer Science">
+        <div class="course-content">
+            <h2>Mathematical Logic for Computer Science</h2>
+            <p><br>Focuses on mathematical logic used in computer science, including boolean algebra, formal proof techniques, and logic programming.</p>
+            <span class="instructor">Prof. Michael Carter</span>
+            <div class="rating">⭐ 4.9 (11,142)</div>
+            <div class="details">28 total hours • 140 lectures • All Levels</div>
+            <div class="price">
+                <span class="current">$54.99</span>
+                <span class="original">$89.99</span>
+            </div>
+            <button onclick="handleButtonClick('Mathematical Logic for Computer Science', 54.99, 'mathlogicforcs.PNG', '00-000')" class="buy-btn">
+                <i class="fas fa-shopping-cart cart-icon"></i> BUY NOW
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<footer class="site-footer">
+  <div class="back-to-top">
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Get to Know Us</h4>
+        <ul>
+          <li><a href="#">About STEMSupply</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Work With Us</h4>
+        <ul>
+          <li><a href="#">Become a Partner</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Promote STEM</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <img src="logostem.jpg" alt="STEMSupply Logo" class="footer-logo" />
+    <div class="footer-meta">
+      <select>
+        <option>English</option>
+      </select>
+      <select>
+        <option>USD - U.S. Dollar</option>
+        <option>AED - AED Dirhams</option>
+      </select>
+      <select>
+        <option>United States</option>
+      </select>
+    </div>
+    <p>© 2025 STEMSupply. All rights reserved.</p>
+  </div>
+</footer>
+  <script src="main.js"></script>
+  </body>
+  </html>
