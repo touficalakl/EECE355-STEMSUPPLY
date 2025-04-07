@@ -1,3 +1,64 @@
+ function handleButtonClick(courseName, price, image, productId) {
+    // Directly redirect to checkout page for payment
+    buyNow(courseName, price, image, productId);
+  }
+  
+  function buyNow(courseName, price, image, productId) {
+    // Redirect to checkout page with product details and price as parameters
+    window.location.href = `/courses-checkout.html?productId=${productId}&courseName=${encodeURIComponent(courseName)}&price=${price}`;
+  }
+  
+  //payment for courses
+  document.addEventListener("DOMContentLoaded", () => {
+    const numberInput = document.getElementById("cardNumber");
+    const nameInput = document.getElementById("cardHolder");
+    const monthSelect = document.getElementById("month");
+    const yearSelect = document.getElementById("year");
+    const cvvInput = document.getElementById("cvv");
+  
+    const numberDisplay = document.getElementById("display-card-number");
+    const nameDisplay = document.getElementById("display-card-name");
+    const expiryDisplay = document.getElementById("display-card-expiry");
+    const cvvDisplay = document.getElementById("cvv-preview");
+    const card = document.getElementById("card");
+  
+    numberInput.addEventListener("input", () => {
+      let value = numberInput.value.replace(/\D/g, "").substring(0, 16);
+      let masked = value
+        .replace(/(.{4})/g, "$1 ")
+        .trim()
+        .split(" ")
+        .map((block, i) => (i === 0 || i === 3 ? block : "****"))
+        .join(" ");
+      numberDisplay.textContent = masked.padEnd(19, "*");
+    });
+  
+    nameInput.addEventListener("input", () => {
+      nameDisplay.textContent = nameInput.value.trim() || "FULL NAME";
+    });
+  
+    function updateExpiry() {
+      const month = monthSelect.value !== "Month" ? monthSelect.value : "";
+      const year = yearSelect.value !== "Year" ? yearSelect.value.slice(2) : "";
+      expiryDisplay.textContent = month && year ? `${month}/${year}` : "MM/YY";
+    }
+  
+    monthSelect.addEventListener("change", updateExpiry);
+    yearSelect.addEventListener("change", updateExpiry);
+  
+    cvvInput.addEventListener("focus", () => {
+      card.classList.add("flipped");
+    });
+  
+    cvvInput.addEventListener("blur", () => {
+      card.classList.remove("flipped");
+    });
+  
+    cvvInput.addEventListener("input", () => {
+      cvvDisplay.textContent = cvvInput.value || "***";
+    });
+  });
+
 document.addEventListener("DOMContentLoaded", () => {
     const numberInput = document.getElementById("cardNumber");
     const nameInput = document.getElementById("cardHolder");
