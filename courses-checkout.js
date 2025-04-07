@@ -3,7 +3,7 @@
     buyNow(courseName, price, image, productId);
   }
   
-  function buyNow(courseName, price, image, productId) {
+  function handleButtonClick(courseName, price, image, productId) {
     // Redirect to checkout page with product details and price as parameters
     window.location.href = `/courses-checkout.html?productId=${productId}&courseName=${encodeURIComponent(courseName)}&price=${price}`;
   }
