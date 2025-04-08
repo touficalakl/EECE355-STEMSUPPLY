@@ -1,4 +1,9 @@
-function handleButtonClick() {
+  function handleButtonClick() {
+    // Directly redirect to checkout page for payment
+    buyNow();
+  }
+  
+function buyNow() {
   window.location.href = 'courses-checkout.html';
 }
 
