@@ -315,15 +315,15 @@ document.getElementById("checkoutForm").addEventListener("submit", (e) => {
   }
   
 
-  function handleButtonClick(courseName, price, image, productId) {
+  function handleButtonClick() {
     // Directly redirect to checkout page for payment
-    buyNow(courseName, price, image, productId);
+    buyNow();
   }
   
-  function buyNow(courseName, price, image, productId) {
-    // Redirect to checkout page with product details and price as parameters
-    window.location.href = `/courses-checkout.html?productId=${productId}&courseName=${encodeURIComponent(courseName)}&price=${price}`;
-  }
+function buyNow() {
+  window.location.href = 'courses-checkout.html';
+}
+
   
   //payment for courses
   document.addEventListener("DOMContentLoaded", () => {
