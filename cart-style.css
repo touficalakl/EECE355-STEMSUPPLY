@@ -38,6 +38,8 @@ h1 {
     display: flex;
     gap: 15px;
     align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .item-info img {
@@ -50,6 +52,7 @@ h1 {
 .item-title {
     font-weight: bold;
     margin: 0 0 5px 0;
+    text-align: left;
 }
 
 input[type="number"] {
